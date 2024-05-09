@@ -11,12 +11,6 @@
           <li>
             <a href="https://rimjhimittal.github.io/CG-Submission/">Live Demo</a>
           </li>
-           <!-- <li>
-            <a href="#">Link2</a>
-          </li>
-          <li>
-            <a href="#HI">Link3</a>
-          </li> -->
         </ul>
       </header>
      
@@ -34,20 +28,32 @@
        </div> -->
        <section name = "Overview">
        <h2>Overview:</h2>
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </section>
+       <p>The objective of this project is to utilize JavaScript on a pre-defined canvas, along with CSS and HTML5, to design an animation featuring a plane flying across the sky, passing through clouds with a hot air balloon hovering in the background, simulating a parallax effect. This parallax effect creates a sense of depth and movement throughout the canvas.</p>
+        <p>Through this project, we were able to grasp the following concepts:</p>
+        <ul>
+            <li><u style="color: #03dac6;">Deep dive into web development</u>: Understanding how multiple languages like HTML, JS, and CSS come together on the execution and hosting of a single `index.html` file to make a reactive webpage.</li><br>
+            <li><u style="color: #03dac6;">Canvas drawing</u>: Understanding how to use the HTML5 canvas element and draw basic shapes.</li><br>
+            <li><u style="color: #03dac6;">Animations and Transformations</u>: Creating smooth animations using `requestAnimationFrame`, updating canvas elements dynamically, and using element-specific update functions.</li><br>
+            <li><u style="color: #03dac6;">Responsive designing</u>: Following responsive designing principles allows us to deliver a prototype that can be deployed universally and can run on devices irrespective of their aspect ratios (including mobile devices, tablets, and desktops). This was possible using the `this` keyword to refer to the current instances of the canvas through `this.width` and `this.height`. The context rendering on the canvas was handled using `this.ctx` for class instances.</li><br>
+        </ul>
+       </section>
+       <section name = "Storyboard">
+        <h2>Storyboard:</h2>
+        <img src="./Unknown-2.jpg" alt="Storyboard" style="width:60%;">
+      </section>
         <section name = "ProjectGIF">
             <h2>Project GIF:</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <img src="./teaser.gif" alt="ProjectGIF" style="width:60%;">
           </section>
+          
           <section name = "Resources">
-            <h2>Resources and Assets Used:</h2>
-            <ul>
-                <li>This</li>
-                <li>Is</li>
-                <li>a</li>
-                <li>list</li>
-            </ul>
+    <h2>Animation Drawing Assets</h2>
+    <p>All drawing assets have been drawn and exported as PNGs from <u>Canva</u> and ported to JavaScript as combinations of Bezier curves using the <u>Inkscape</u> software: <a href="https://inkscape.org" target="_blank">Inkscape</a>.</p>
+    <ul>
+      <li><u style="color: #03dac6;">Aeroplane:</u> The aeroplane is an oscillating element created using functions like `beginPath()`, `moveTo()`, `lineTo()`, `bezierCurveTo()`, and `closePath()`, in sequence with `fill()` to fill the closed figures with color.</li><br>
+      <li><u style="color: #03dac6;">Clouds</u>: The clouds are a group of five individual clouds, grouped together in a static element that translates across the canvas in a loop to simulate a moving backdrop.</li><br>
+      <li><u style="color: #03dac6;">Hot Air Balloon</u>:The hot air balloon is a static element designed to enhance the parallax effect of the moving background. It is also drawn using Bezier curves, and `fill()` is used to add multiple colors to the element.</li><br>
+      </ul>
         </section>
     </div>
      
